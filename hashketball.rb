@@ -318,8 +318,8 @@ def player_with_longest_name
         
     end 
   end 
-  longest_name = get_player_name_by_name_size()
-  return 
+  longest_name = get_player_name_by_name_size(longest_name_size)
+  return longest_name
 end 
 
 
