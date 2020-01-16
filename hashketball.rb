@@ -334,7 +334,7 @@ def find_player_by_steals(steals)
 end 
 
 
-long_name_steals_a_ton?
+def long_name_steals_a_ton?
 
 end 
   
