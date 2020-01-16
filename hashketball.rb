@@ -305,4 +305,19 @@ def player_with_longest_name
   return longest_name
 end 
 
+
+def get_player_name_by_name_size(name_size)
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player| 
+           if name_size == player[:player_name].size
+            name = player[:player_name]
+            return name
+          end 
+        end 
+      end 
+    end 
+  end 
+end 
   
