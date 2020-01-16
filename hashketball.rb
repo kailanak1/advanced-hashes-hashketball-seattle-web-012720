@@ -326,7 +326,11 @@ end
 def find_player_by_steals(steals)
   game_hash.each do |place, team| 
     team[:players].each do |player| 
-      steals = player[:steals]
+      if steals == player[:steals]
+        return player[:player_name]
+      end 
+    end 
+  end 
 end 
 
 long_name_steals_a_ton?
