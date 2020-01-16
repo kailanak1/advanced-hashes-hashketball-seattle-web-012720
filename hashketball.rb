@@ -335,6 +335,7 @@ end
 
 
 def long_name_steals_a_ton?
+  array = []
   steals_array = [] 
   game_hash.each do |place, team|
     team[:players].each do |player|
