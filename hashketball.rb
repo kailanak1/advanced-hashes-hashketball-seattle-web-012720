@@ -320,7 +320,7 @@ def player_with_longest_name
     end 
   end 
   long_name = array.max 
-  longest_name = get_player_name_by_name_size(longest_name)
+  longest_name = get_player_name_by_name_size(long_name)
   return longest_name
 end 
 
