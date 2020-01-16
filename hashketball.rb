@@ -335,7 +335,20 @@ end
 
 
 def long_name_steals_a_ton?
-
+  steals_array = [] 
+  game_hash.each do |place, team|
+    team[:players].each do |player|
+      steals = player[:steals]
+      steals_array << steals 
+    end 
+  end 
+  most_steals = array.max 
+  steals_a_ton = find_player_by_steals(most_steals)
+  if player_with_longest_name == steals_a_ton
+    return true 
+  else 
+  return false 
+  end 
 end 
   
 
