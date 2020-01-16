@@ -339,7 +339,7 @@ def long_name_steals_a_ton?
   game_hash.each do |place, team|
     team[:players].each do |player|
       steals = player[:steals]
-      steals_array << steals 
+      array << steals 
     end 
   end 
   most_steals = array.max 
