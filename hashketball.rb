@@ -293,19 +293,6 @@ def winning_team
 end 
 
 
-def player_with_longest_name 
-  total = 0 
-  longest_name = ""
-  game_hash.each do |place, team|
-    team[:players].each do |player|
-      name_size = player[:player_name].size
-      if name_size > total 
-    end 
-  end 
-  return longest_name
-end 
-
-
 def get_player_name_by_name_size(name_size)
   game_hash.each do |place, team|
     team.each do |attribute, data|
@@ -320,4 +307,20 @@ def get_player_name_by_name_size(name_size)
     end 
   end 
 end 
+
+
+def player_with_longest_name 
+  total = 0 
+  game_hash.each do |place, team|
+    team[:players].each do |player|
+      name_size = player[:player_name].size
+      if name_size > total 
+    end 
+  end 
+  longest_name = 
+  return 
+end 
+
+
+
   
