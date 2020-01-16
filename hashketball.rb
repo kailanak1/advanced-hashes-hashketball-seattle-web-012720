@@ -341,7 +341,6 @@ long_name_steals_a_ton?
       steals = player[:steals]
       steals_array << steals 
     end 
-    end 
   end 
 end 
 
