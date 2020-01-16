@@ -343,7 +343,7 @@ long_name_steals_a_ton?
     end 
   end 
   most_steals = array.max 
-  steals_a_ton =find_player_by_steals(most_steals)
+  steals_a_ton = find_player_by_steals(most_steals)
   if player_with_longest_name == steals_a_ton
     return true 
   end 
