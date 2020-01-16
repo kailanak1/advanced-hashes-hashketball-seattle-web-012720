@@ -328,6 +328,10 @@ long_name_steals_a_ton?
     team[:players].each do |player|
       steals = player[:steals]
       array << steals 
+    end 
+  end 
+  most_steals = array.max 
+  
 end 
 
   
